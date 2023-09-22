@@ -122,10 +122,13 @@ setTimeout(function(){
         let line = new LeaderLine(startElement, endElement);
         // draggies.addEventListener('scroll')
         line.setOptions({
-            // endLabel: LeaderLine.pathLabel(draggies[i][3]),
+            endLabel: LeaderLine.pathLabel(draggies[i][3],{
+                color: '#d9d9d9',
+                outlineColor: ''
+            }),
             size: 0.5,
             // dropShadow: {color: 'blue', dx: 0, dy: 0},
-            color: 'black',
+            color: 'rgba(0,0,0,0.25)',
             startPlug: 'behind',
             endPlug: 'behind'
         });
@@ -135,8 +138,8 @@ setTimeout(function(){
                 line.position();}
         });
         draggable.containment = document.body;
-    }
-    // startElement.addEventListener('click', function() { line.show(); });
+    } 
+    // startElement.addEventListener('hover', function() { line.show(); });
 }, delay);
 
 
