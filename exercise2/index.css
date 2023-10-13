@@ -8,12 +8,8 @@ body{
 }
 
 .container{
-   /* display: flex;
-   flex-flow: column nowrap; */
-   /* width: 100vw; */
    height: 200vh;
    width: 100vw;
-   /* background-color: aqua; */
    padding: 0px;
    margin: 0px;
 }
@@ -30,30 +26,19 @@ body{
     text-align: center;
     animation: gone 15s ease-out 1;
     opacity: 0;
-    /* animation-direction: normal; */
 }
 
 @keyframes gone {
     0%{
         opacity: 1;
     }
+    70%{
+        opacity: 1;
+    }
     100%{
         opacity: 0;
     }
 }
-
-
-
-/* .instructions{
-    width: 40%;
-    padding: 0px 20px;
-}
-
-.heading{
-    width: fit-content;
-    padding: 0px 20px;
-    text-align: right;
-} */
 
 #template{
     display: none;

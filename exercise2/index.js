@@ -70,12 +70,7 @@ const promise = new Promise((resolve, reject) => {
             let end = record.get('end');
             let endLabel = record.get('endLabel');
 
-            // console.log ("start = " + start + ",end = " + end + ", endLabel = " + endLabel);
-
             draggies.push([templateCopy.getAttribute('id'), start, end, endLabel]);
-            // i++;
-            // console.log(draggies);
-
 
             templateCopy.style.left = getPosX();
             templateCopy.style.top = getPosY();
@@ -84,7 +79,6 @@ const promise = new Promise((resolve, reject) => {
 
             console.log('Retrieved', record.get('name'), ' dragging now.');
             console.log(templateCopy);
-            // dragElement(templateCopy);
         });
 
         // To fetch the next page of records, call `fetchNextPage`.
@@ -113,7 +107,7 @@ let delay = 6000;
 
 setTimeout(function(){
     console.log(draggies.length);
-    for (let i = 0; i < draggies.length-1; i++){
+    for (let i = 0; i < draggies.length; i++){
         let startElement = document.getElementById(draggies[i][1]);
         console.log("startElement = " + startElement);
         let endElement = document.getElementById(draggies[i][2]);
@@ -135,42 +129,12 @@ setTimeout(function(){
 
         draggable = new PlainDraggable(document.getElementById(draggies[i][0]), {
             onMove: function() {
-                line.position();}
+                // line.position();}
+                line.remove();}
         });
         draggable.containment = document.body;
     } 
 }, delay);
-
-
-// let timeout = setTimeout(makeLeaderLine(start,end,endLabel), 1000);
-
-
-// function makeLeaderLine(start, end, endLabel){
-//     let draggies = document.getElementsByClassName("draggable");
-
-//     for (let i = 0; i < draggies.length; i++){
-//         draggable = new PlainDraggable(draggies[i], {
-//             onMove: function() {
-//                 line.position();}
-//         });
-//         draggable.containment = document.body;
-//     }
-
-//     let startElement = document.getElementById(start);
-//     let endElement = document.getElementById(end);
-//     let line = new LeaderLine(startElement, endElement, {hide: true});
-//     // draggies.addEventListener('scroll')
-//     line.setOptions({
-//         endLabel: LeaderLine.pathLabel(endLabel),
-//         size: 0.5,
-//         // dropShadow: {color: 'blue', dx: 0, dy: 0},
-//         color: 'black',
-//         startPlug: 'behind',
-//         endPlug: 'behind'
-//     });
-//     startElement.addEventListener('click', function() { line.show(); });
-// }
-
 
 //libraries used are PlainDraggable and LeaderLine by Anseki on GitHub
 //https://anseki.github.io/plain-draggable/
