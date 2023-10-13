@@ -113,7 +113,7 @@ let delay = 6000;
 
 setTimeout(function(){
     console.log(draggies.length);
-    for (let i = 0; i < draggies.length; i++){
+    for (let i = 0; i < draggies.length-1; i++){
         let startElement = document.getElementById(draggies[i][1]);
         console.log("startElement = " + startElement);
         let endElement = document.getElementById(draggies[i][2]);
@@ -139,7 +139,6 @@ setTimeout(function(){
         });
         draggable.containment = document.body;
     } 
-    // startElement.addEventListener('hover', function() { line.show(); });
 }, delay);
 
 
