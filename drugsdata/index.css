@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&family=Instrument+Serif:ital@0;1&display=swap');
 
 body{
     background-color: black;
@@ -25,19 +25,20 @@ body{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    padding: 0px 20px;
-    background-color: pink;
+    padding: 10px 10px;
+    /* background-color: pink; */
     margin-bottom: 30px;
+    color: white;
 }
 
 .heading{
     width: 20%;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .about{
-    width: 40%;
-    background-color: yellow;
+    width: 25%;
+    /* background-color: yellow; */
 }
 
 #items{
@@ -73,14 +74,15 @@ img{
 }
 p{
     /* background-color: pink; */
-    margin: 5px;
+    margin: 3px;
 }
 
 .name{
-    font-size: 20px;
+    font-family: 'Instrument Serif', serif;
+    font-size: 40px;
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: -0.5px;
+    /* text-transform: uppercase; */
+    /* letter-spacing: -0.5px; */
 
 }
 
@@ -90,4 +92,17 @@ footer{
     margin-top: 150px;
     margin-bottom: 80px;
     color: white;
+}
+
+.heading{
+    font-family: 'Instrument Serif', serif;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about{
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 18px;
 }
