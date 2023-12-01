@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&display=swap');
+
+body{
+    background-color: black;
+    box-sizing: border-box;
+    margin: 0px;
+    overflow-x: hidden;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 14px;
+}
+
+.container{
+    width: 100vw;
+    height: auto;
+    /* background-color: turquoise; */
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    width: 100%;
+    box-sizing: border-box;
+    /* height: auto; */
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background-color: pink;
+    margin-bottom: 30px;
+}
+
+.heading{
+    width: 20%;
+    background-color: yellow;
+}
+
+.about{
+    width: 40%;
+    background-color: yellow;
+}
+
+#items{
+    /* background-color: whitesmoke; */
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 0.2fr);
+    /* grid-template-rows: repeat(4, 1fr);; */
+    place-items: start start;
+    gap: 1vw 1vw;
+}
+
+.dwug{
+    background-color: white;
+    /* padding: 15px; */
+    width: 16vw;
+    height: fit-content;
+    padding: 30px;
+    border: 1px solid black;
+    /* border-radius: 4px; */
+    /* filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.269)); */
+}
+
+#template{
+    display: none;
+}
+
+img{
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+p{
+    /* background-color: pink; */
+    margin: 5px;
+}
+
+.name{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+
+}
+
+footer{
+    width: 100vw;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    color: white;
+}
