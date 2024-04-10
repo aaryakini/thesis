@@ -7,9 +7,190 @@
     <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.png?"> -->
 </head>
 <body>
-    <div class="container">
-        <p class="title">under construction<p>
+    <div class="header">
+        <div id="projectTitle"> 
+            <p class="title">Test It Before You Ingest It</p>    
+            <p class="subtitle">A Friendly Toolkit to Harm Reduction and Safe Drug Use.</p>
+            <p class="subtitle">A Parsons BFA Communication Design Thesis designed by Aarya Kini in May 2024.</p>
+        </div>     
+
+        <div id="main">
+            <img src="assets/header.png">
+        </div>
     </div>
+
+    <div class="navbar">
+        <button class="button" id="aboutButton" onclick="showHide('about')">About</button>
+        <button class="button" id="componentsButton" onclick="showHide('components')">Components</button>
+        <button class="button" id="galleryButton" onclick="showHide('gallery')">Gallery</button>
+    </div>
+
+    <div class="block" id="about">
+        <p><span class="italic">Test It Before You Ingest It</span> is a primer on harm reduction for young, recreational drug users.
+        <br><br>While drugs have become deadlier in the wake of the COVID-19 pandemic, the urge amongst the youth to experiment with them has remained, making the risk of drug-use related complications and overdose higher than ever. Consequently, foregrounding the value of harm reduction as a public health practice is critical, and through its various elements, this thesis seeks to do just that. 
+        <br><br>Three books present the fundamental principles of harm reduction through the voices of experts. Merchandise, like posters for your bedroom, stickers for your notebooks, and a lighter for when you're out about town, serve as regular reminders of the importance of safe drug use. The resource zine directs you to places you can learn more about harm reduction, and the Narcan kit and test strips are at your disposal for when you feel ready to embrace the responsibility of being an empowered bystander.
+        <br><br>Harm reduction relies on community, as does the spread of wisdom about it. This project was produced using cost-effective materials, and digital copies are hosted online to make redistribution as simple as possible for individuals and community organizations.  
+        <br><br>By designing engaging entry-points to learn about harm reduction, this thesis aims to empower young people to have informed conversations about staying safe and alive should they choose to experiment with drugs. Hopefully it will also foster a generation that believes in and advocates for the life-saving potential of this practice.
+        <br><br><span class="subhead">Project Credits</span>
+        <br>Content for the Partygoer's Handbook to Safe Drug Use was sourced from DanceSafe and NEXT Distro. Stories in Enter the Experience Vault were collated from The Erowid Center's Experience Vaults. Special thanks to the Brooklyn Harm Reduction Outreach Cooperative for sharing their knowledge, advice, and specific insight into local harm reduction work.
+    </p>
+    </div>
+
+    <div class="block" id="components">
+        <!-- Experience Vault -->
+        <div id="experienceVault" class="component">
+            <div class="componentImage">
+                <img src="assets/experienceVault.png">
+            </div>
+            <div class="componentText">
+                <p class="componentTitle">Enter the Experience Vault</p>
+                <p class="componentSubtitle">Book, 9 in x 12 in, 325 pages, coil bound</p>
+                <p class="componentDesc">Enter the Experience Vault is a compilation of 80 personal experience reports submitted by users around the world to the Erowid Center's Experience Vaults. The book is sectioned by substance type, indicated by the color of each page, and includes five stories for 16 different common party drugs. The book is prefaced with an essay by the founders of the Erowid Center, on the importance of subjective experience reports and their methodology for collecting and publishing them, as well as an overview of the Shulgin Rating Scale — a simple scale for reporting the subjective effect of psychoactive substances, developed by Alexander Shulgin, often referred to as the godfather of psychedelics. The book is intended to communicate not only the range of effects that a drug can have, how they can vary by individual, and provide readers with a developed vocabulary for articulating their own experiences.</p>
+                
+                <a class="componentDownload" href="downloads/experienceVault.pdf" download="Enter the Experience Vault — By Aarya Kini">Download PDF</a>
+            </div>
+        </div>
+
+        <!-- Partygoer's Handbook -->
+        <div id="handbook" class="component">
+            <div class="componentText">
+                <p class="componentTitle">The Partygoer's Handbook to Safe Drug Use</p>
+                <p class="componentSubtitle">Book, 7 in x 4.7 in, 114 pages, spiral bound</p>
+                <p class="componentDesc">The Partygoer's Handbook to Safe Drug Use is a palm-sized guidebook divided into two sections. The first contains quick facts for 15 common party drugs, compiled from DanceSafe's drug information cards. Each drug's description consists of a few pages describing the effects, safe dosage, harm reduction tips and relevant warnings for the substance, and concludes with a succinct summary of this information condensed into a single page. Each of these factsheets has a perforated edge allowing them to be torn out of the book and bound together to create a portable pamphlet. This section is organized by drug type that, like in Enter the Experience Vault, is indicated by page color. The second part of the book contains short articles on safe consumption and risks to be aware compiled from resources developed by NEXT Distro.</p>
+                
+                <a class="componentDownload" href="downloads/handbook.pdf" download="Partygoer's Handbook to Safe Drug Use — By Aarya Kini">Download PDF</a>
+            </div>
+
+            <div class="componentImage">
+                <img src="assets/handbook.png">
+            </div>
+        </div>
+
+        <!-- Voices of Harm Reduction -->
+        <div id="voices" class="component">
+            <div class="componentImage">
+                <img src="assets/voices.png">
+            </div>
+            <div class="componentText">
+                <p class="componentTitle">The Voices of Harm Reduction</p>
+                <p class="componentSubtitle">Book, 5 in x 8 in, 114 pages, spiral bound</p>
+                <p class="componentDesc">Voices of Harm Reduction begins with a compilation of interviews with harm reduction experts and practitioners in my local NYC community in Manhattan and Brooklyn. These interviews, that I conducted in the process of gathering information and compiling materials for Test It Before You Ingest It, were integral to developing the right background knowledge and using the appropriate vocabulary to describe the work of harm reduction. Being that I am a journalist as well, and this project was born as a reporting endeavor, the second half of the book contains three stories I wrote in the process of learning about harm reduction.</p>
+                
+                <a class="componentDownload" href="downloads/voices.pdf" download="The Voices of Harm Reduction — By Aarya Kini">Download PDF</a>
+            </div>
+        </div>
+
+        <!-- Harm Reduction Reader -->
+        <div id="reader" class="component">
+            <div class="componentText">
+                <p class="componentTitle">Harm Reduction Reader</p>
+                <p class="componentSubtitle">Zine, 3 in x 3.5 in, 12 pages, saddle stitched</p>
+                <p class="componentDesc">The Harm Reduction Reader is a zine containing a summary list of resources for young recreational drug users to learn more about harm reduction, check their drugs, read drug experiences, find local NYC community organizations, and learn more about government policy surrounding harm reduction and drug use. The back cover also lists phone numbers to call in case of extreme emergencies. The zine is interspersed with photos by <a href="https://billbernstein.com/">Bill Bernstein</a> depicting the Studio 54 nightclub scene in the 1970s.</p>
+                
+                <a class="componentDownload" href="downloads/reader.pdf" download="Harm Reduction Reader — By Aarya Kini">Download PDF</a>
+            </div>
+
+            <div class="componentImage">
+                <img src="assets/reader.png">
+            </div>
+        </div>
+
+        <!-- Poster Set -->
+        <div id="voices" class="component">
+            <div class="componentImage">
+                <img src="assets/posters.png">
+            </div>
+            <div class="componentText">
+                <p class="componentTitle">Posters</p>
+                <p class="componentSubtitle">16.5 in x 23.4 in, set of 3, printed on copy paper</p>
+                <p class="componentDesc">This set contains three posters with infographics related to safe drug use. The first is a combination chart that highlights the degree of risk associated with combining 27 different illicit and prescription drugs with each other. The second highlights different drug types and their associated effects. The last, titled “Test It Before You Ingest It,” named eponymously after this project, encourages drug users to test their drugs and notes where they can obtain free test strips from NY State.</p>
+                
+                <a class="componentDownload" href="downloads/posters.pdf" download="Harm Reduction Posters — By Aarya Kini">Download PDF</a>
+            </div>
+        </div>
+
+        <!-- Sticker Pack -->
+        <div id="reader" class="component">
+            <div class="componentText">
+                <p class="componentTitle">Harm Reduction Sticker Pack</p>
+                <p class="componentSubtitle">5 in x 9.5 in, printed on matte white vinyl</p>
+                <p class="componentDesc">The Harm Reduction Sticker Pack contains decorative stickers referencing the club scene, as well as ones inspired by common harm reduction slogans. The fonts and colors of the pack are inspired by the overarching aesthetic of the project, and the stickers themselves are intended to act as daily reminders for recreational users to integrate the practice of harm reduction into their daily lives.</p>
+                
+                <a class="componentDownload" href="downloads/stickers.ai" download="Harm Reduction Sticker Pack — By Aarya Kini">Download Illustrator File</a>
+            </div>
+            <div class="componentImage">
+                <img src="assets/stickers.png">
+            </div>
+        </div>
+
+            <!-- Lighters and Doob Tube -->
+        <div id="voices" class="component">
+            <div class="componentImage">
+                <img src="assets/lighters.png">
+            </div>
+            <div class="componentText">
+                <p class="componentTitle">Lighters and Doob Tubes</p>
+                <p class="componentSubtitle">Ordered in customized packs of 6 from <a href="https://us.bic.com/en_us/design-my-bic-lighters-set-of-6-personalized-lighters.html">Bic</a></p>
+                <p class="componentDesc">Anyone that’s regularly using substances needs both a lighter, and a doob tube. What better way to remind users to practice harm reduction than by putting slogans on the two things they can’t forgo? There are three versions of the lighters, which read “Cool Kids Carry Narcan,” “Empowered Bystander,” and “Safe Supply Saves Lives,” with the last one being the same message stickered onto the doob tubes.</p>
+            </div>
+        </div>
+
+        <!-- Narcan and Fentanyl Test Strips -->
+        <div id="reader" class="component noBorder">
+            <div class="componentText">
+                <p class="componentTitle">Narcan and Fentanyl Test Strips</p>
+                <p class="componentDesc">Narcan is an opioid antagonist that is used as a treatment to rapidly reverse the effects of an overdose. It has a 75 – 100% effectiveness rate (National Institutes of Health), and is widely considered one of the most critical tools to the practice of harm reduction. Fentanyl is a synthetic opioid that is 50 times stronger than heroin, and a common contaminant found in opioids, and occasionally other types of drugs. Fentanyl test strips can be used to check for the presence of fentanyl in street drugs.</p>
+                
+                <a class="componentDownload" href="https://forms.ny.gov/s3/Harm-Reduction-Order-Form" target="_blank">Order Narcan and Test Strips (NYC Only)</a>
+            </div>
+
+            <div class="componentImage">
+                <img src="assets/narcanTestStrips.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="block" id="gallery">
+        <div class="gallery">
+            <div class="galleryItem" id="item1">
+                <img src="gallery/gallery1.png" class="galleryImg">
+            </div>
+            <div class="galleryItem" id="item2">
+                <img src="gallery/gallery2.png" class="galleryImg">
+            </div>
+            <div class="galleryItem" id="item3">
+                <img src="gallery/gallery3.png" class="galleryImg">
+            </div>
+            <div class="galleryItem" id="item4">
+                <img src="gallery/gallery4.png" class="galleryImg">
+            </div>
+            <div class="galleryItem" id="item5">
+                <img src="gallery/gallery5.png" class="galleryImg">
+            </div>
+            <div class="galleryItem" id="item6">
+                <img src="gallery/gallery6.png" class="galleryImg">
+            </div>
+            <div class="galleryItem" id="item7">
+                <img src="gallery/gallery7.png" class="galleryImg">
+            </div>
+            <div class="galleryItem" id="item8">
+                <img src="gallery/gallery8.png" class="galleryImg">
+            </div>
+        </div>
+    </div>
+   
+    <div class="footer">
+        <p class="footerText"><span class="footerHead">Disclaimer</span>
+            <br>No part of this project is intended to substitute for the advice and recommendations of licensed healthcare professionals. Please note that being in possession of and / or consuming some of the drugs mentioned in this project may be illegal in the area that you reside in, and all of them carry a certain degree of risk and can potentially be dangerous to your life and health. This project by no means recommends any of the activities mentioned within it, and serves solely as a reference point based on a mix of scientific and anecdotal material. Always do your own research, empower yourself with a range of information, and never hesitate to seek the advice of an expert if you are unsure of what you are doing. If you or someone you know is in an emergency, please dial 911 or seek the attention of an authorized medical provider.
+        </p>
+
+        <p class="footerText">Thesis project designed by Aarya Kini.
+            <br>At Parsons School of Design, New York City, 2024.
+            <br>Under the guidance of Joe Marianek and Dinah Fried.
+        <br><a href="https://aaryakini.com/">aaryakini.com</a>
+        </p>
+    </div>
+    
     <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
