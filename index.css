@@ -41,7 +41,7 @@ body{
 .subtitle{
     font-family: aktiv-grotesk, sans-serif;
     font-weight: 400;
-    font-size: calc(14px + 0.1vw);
+    font-size: calc(12px + 0.1vw);
     width: 18vw;
     text-align: left;
 }
